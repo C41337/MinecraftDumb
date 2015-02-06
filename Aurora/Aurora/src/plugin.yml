@@ -1,0 +1,22 @@
+name: Aurora
+version: 0.2.1
+main: com.swordpvp.aurora.Aurora
+author: CraftThatBlock
+depend: [Essentials, SwordLib, BarAPI, NametagEdit]
+commands:
+  aurora:
+    description: Aurora's Commands
+    aliases: [au]
+permissions:
+  aurora.*:
+    description: Gives access to all of Aurora
+    children:
+      aurora.admin: true
+      aurora.team: true
+    default: OP
+  aurora.admin:
+    description: Gives admin access to Aurora
+    default: false
+  aurora.team:
+    description: Allows you to switch teams
+    default: false

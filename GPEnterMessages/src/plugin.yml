@@ -1,0 +1,5 @@
+name: GPMessages
+main: com.craftthatblock.gpmessages.GPMessages
+version: 1.0
+author: CraftThatBlock
+softdepend: [GriefPrevention]

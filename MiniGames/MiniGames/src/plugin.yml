@@ -1,0 +1,18 @@
+name: MiniGames
+author: CraftThatBlock
+version: 0.1
+main: com.swordpvp.minigames.MiniGames
+softdepends: [BarAPI, CTBAPI, LibsDisguise, NametagEdit, ProtocolLib, SwordLib, WorldEdit]
+commands:
+  minigame:
+    description: MiniGame's Commands
+    aliases: [mg, minigames]
+permissions:
+  minigame.*:
+    description: Gives access to all of MiniGame
+    children:
+      minigame.admin: true
+    default: OP
+  minigame.admin:
+    description: Gives admin access to MiniGame
+    default: OP

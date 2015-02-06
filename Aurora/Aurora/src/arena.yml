@@ -1,0 +1,54 @@
+# SwordPVP's Aurora map config
+# If a list is not needed, change to []. Ex: Potion: []
+# (STRING) Arena name
+Arena: Arena
+Gamemode:
+  # (LIST:STRING) Team list, minimum 2. Format: <team>:<color>. Team should be capitalized and color must be one of these (lowercase): http://jd.bukkit.org/rb/apidocs/org/bukkit/Color.html
+  Teams:
+  - red:red
+  - blue:blue
+  
+  # (LIST:LOC) Spawns for teams. Minimum 1. Format: <team>-Spawns
+  # Location Format: x:y:z:yaw:pitch
+  red-Spawns:
+  - x:y:z:yaw:pitch
+  blue-Spawns:
+  - x:y:z:yaw:pitch
+  
+  # (STRING) Gamemode. Accepts: TDM, FFA
+  Gamemode: TDM
+  
+  # (LIST:LOC) For FFA: Teams do not apply and spawns are set under 'Spawns:'
+  #Spawns:
+  #- x:y:z:yaw:pitch
+  
+  # (INT) Time limit of the match
+  TimeLimit: 900
+
+  # (BOOL) Can players break/place block?
+  Building: true
+
+  # (BOOL) Can fire spread/destroy blocks?
+  Fire: true
+
+  # (INT) Spawn Protection radius. Set to 0 for spawn block only. Set to -1 to disable.
+  SpawnProtection: 3
+
+Inventory:
+  # (LIST:ITEM) Essentials Format: http://wiki.ess3.net/wiki/Kits#Config_Syntax
+  Items:
+  - id ammount
+  
+  # (LIST:STRING/LIST:INT) From toe to head, and only the item ID to name from http://jd.bukkit.org/rb/apidocs/org/bukkit/Material.html
+  Armor:
+  - boots
+  - leggins
+  - chestplates
+  - helmet
+  
+  # (LIST:POTION) Speed 1 = SPEED 0
+  Potions:
+  - SPEED 0
+  
+  # (BOOL) Only applies if leather. Doesn't apply if gamemode is FFA
+  UseColorArmor: true

@@ -1,0 +1,20 @@
+# SwordPVP's CraftSonic Map Config
+# If a list is not needed, change to []. Ex: Potion: []
+#
+# String = Text
+# Int = Full number (1, 2, 42)
+# Double = Decimal (4.2, 6.9)
+# Location = Location (X:Y:Z:YAW:PITCH)
+# > Checkpoint = Cuboid with ID (ID,LOC1,LOC2) Loc1/2 are Locations. See up.
+
+# (STRING) The arena name (Same as this file's name without .yml)
+Arena:
+
+# (LOCATION) Where people wait
+Lobby:
+
+# (LOCATION) Where people start
+Spawn:
+
+# (LIST:CHECKPOINT) Where people cross
+CheckPoints:
